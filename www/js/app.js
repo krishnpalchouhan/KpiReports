@@ -105,7 +105,7 @@ function getData() {
 				dateOnly=dateOnly.substring(0,10);
 				dateOnly=formatDate(dateOnly)	
             var html_data = '<tr class="xlslist" id="' + i.id + '"  >'+
-			'<td class="text-left url ' + ReadeStatus + '" href="' + i.url + '">' + i.name + ' <p class="pull-righqt">' + dateOnly + '</p>  </td>'+
+			'<td class="text-left url ' + ReadeStatus + '" href="' + i.url + '"><a '+'" href="' + i.url + '">' + i.name + '</a> <p class="pull-righqt">' + dateOnly + '</p>  </td>'+
 			'<td class=" ' + ReadeStatus + ' "><button  class="delete-button pull-right  " type="button" onclick="deleteReport('+i.id+
 			')">Delete</button></td></tr>';
             $('.Data_Container').append(html_data);

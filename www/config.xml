@@ -37,6 +37,13 @@
               <icon src="img/ios/AppIcon.appiconset/icon-small@2x.png" width="58" height="58" />
               
      </platform>
+	 <gap:plugin name="onesignal-cordova-plugin" source="npm" />
+
+<!-- Recommend the newest cli but requires cli-5.1.1+ and gradle for Android. -->
+<!-- If the below settings are not compatible with your project set the "PGB ANT" version above. -->
+<preference name="phonegap-version" value="cli-5.4.1" />
+
+
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
